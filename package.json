@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open --browser chrome --e2e",
+    "testPrimero": "cypress run --browser chrome --e2e",
+    "testGrupos": "cypress run --groupuser-tests --spec 'cypress/e2e/2week/**/*'",
+    "testSpec": "cypress run --browser chrome --e2e --spec 'cypress/e2e/2week/hooks.cy.js'",
+    "testSpecNoFire": "cypress run --e2e --spec 'cypress/e2e/2week/hooks.cy.js'"
   },
   "keywords": [],
   "author": "",

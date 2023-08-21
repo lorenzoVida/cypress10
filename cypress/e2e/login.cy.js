@@ -4,6 +4,12 @@ describe('my Suite Test', () => {
     cy.get("a[href='/bank/signup']").click()
     cy.get("#title").select('Ms.')
     cy.get("#firstName").type('Lorenzo')
+    cy.get("input[value='F']").click()
+    cy.get('#dob').type('18/10/2923')
+    cy.get('#ssn').type('123-45-6789')
+    cy.get('#emailAddress').type('correo@gmail.com')
+    cy.get('#password').type('P@ssword01')
+    cy.get('#confirmPassword').type('P@ssword01')
   })
 
   // it('reload page', () => {
